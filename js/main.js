@@ -20,3 +20,7 @@ $('.btn-close').click(
     $(this).closest('.content-box').fadeOut(500);
   }
 )
+
+$('.content-box img').click( function(){
+  $(this).toggleClass('clicked');
+});

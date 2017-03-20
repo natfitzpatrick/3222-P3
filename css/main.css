@@ -105,9 +105,14 @@ body {
   text-decoration: none;
 }
 
+.ul {
+  text-align: center;
+}
+
 .mainNav li {
   list-type: none;
   display: inline-block;
+  text-align: center;
 }
 
 .mainNav a {
@@ -116,10 +121,11 @@ body {
   text-decoration: none;
   padding: 10px;
   font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 .content-box {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0);
   position: absolute;
   top: 50px;
   right: 30px;
@@ -129,9 +135,65 @@ body {
   color: white;
   overflow: scroll;
 }
+.content-box img {
+  position: absolute;
+  /*top: 0;
+  left: 0;*/
+  width: 100px;
+  transition: all 1s ease-in-out;
+}
+.content-box .right {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+
+.content-box .left {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.content-head .right.clicked {
+  top: -50px;
+  right: 420px;
+  transform: rotate(-360deg);
+}
+
+.content-head .left.clicked {
+  top: -50px;
+  right: 420px;
+  transform: rotate(360deg);
+}
+
+.content-ub .right.clicked {
+  top: -50px;
+  right: 420px;
+  transform: rotate(360deg);
+}
+
+.content-ub .left.clicked {
+  top: -50px;
+  right: 420px;
+  transform: rotate(360deg);
+}
+
+.content-lb .right.clicked {
+  top: -50px;
+  right: 420px;
+  transform: rotate(360deg);
+}
+
+.over
+{
+position:absolute;
+left:40px;
+top:10px;
+z-index:-1;
+}
 
 .content-box a {
-  color: #eee;
+  color: none;
 }
 
 .hide {
@@ -146,7 +208,6 @@ body {
   text-decoration: none;
   font-size: 24px
 }
-
 
 
 

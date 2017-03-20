@@ -142,46 +142,65 @@ body {
   width: 100px;
   transition: all 1s ease-in-out;
 }
-.content-box .right {
+.content-box .top-right {
+  position: absolute;
+  top: 0px;
+  right: 200px;
+}
+
+.content-box .mid-right {
   position: absolute;
   top: 200px;
   right: 200px;
 }
 
-.content-box .left {
+.content-box .bottom-right {
+  position: absolute;
+  top: 400px;
+  right: 200px;
+}
+
+.content-box .top-left {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+
+.content-box .mid-left {
   position: absolute;
   top: 200px;
   left: 200px;
 }
 
-.content-head .right.clicked {
-  top: -50px;
-  right: 420px;
+.content-head .top-right.clicked {
+  top: -15px;
+  right: 430px;
+  width: 80px;
   transform: rotate(-360deg);
 }
 
-.content-head .left.clicked {
-  top: -50px;
-  right: 420px;
-  transform: rotate(360deg);
+.content-head .top-left.clicked {
+  top: 78px;
+  left: 455px;
+  width: 50px;
 }
 
-.content-ub .right.clicked {
-  top: -50px;
-  right: 420px;
-  transform: rotate(360deg);
+.content-head .mid-right.clicked {
+  top: 65px;
+  right: 395px;
+  width: 150px;
 }
 
-.content-ub .left.clicked {
-  top: -50px;
-  right: 420px;
-  transform: rotate(360deg);
+.content-head .mid-left.clicked {
+  top: 50px;
+  left: 413px;
+  width: 165px;
 }
 
-.content-lb .right.clicked {
-  top: -50px;
-  right: 420px;
-  transform: rotate(360deg);
+.content-head .bottom-right.clicked {
+  top: 305px;
+  right: 413px;
+  width: 110px;
 }
 
 .over
